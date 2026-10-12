@@ -1,49 +1,175 @@
-<!doctype html>
-<html lang="es-AR">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#101114">
-<meta name="description" content="Tarjetas y soportes NFC personalizados para que tus clientes accedan fácilmente a tus reseñas y enlaces. Envíos a Mendoza y toda Argentina.">
-<title>TAPLYNFC — Tu negocio, a un toque</title>
-<style>
-:root{--bg:#000000;--ink:#17181b;--muted:#666a72;--lime:#d9ff55;--line:#e3e4df;--dark:#101114;--white:#fff;--radius:22px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit}button,input,select,textarea{font:inherit}.wrap{width:min(1120px,92%);margin:auto}.top{background:var(--dark);color:#fff;font-size:12px;text-align:center;padding:10px}.nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}.brand{font-weight:950;letter-spacing:-1.2px;font-size:23px;text-decoration:none}.brand span{color:#94b72a}.navlinks{display:flex;gap:24px;align-items:center;font-size:14px}.navlinks a{text-decoration:none;color:#4b4d52}.pill{border:0;border-radius:999px;padding:13px 19px;background:var(--lime);font-weight:800;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;color:#111}.hero{background:var(--dark);color:#fff;border-radius:30px;overflow:hidden;display:grid;grid-template-columns:1.05fr .95fr;min-height:440px}.hero-copy{padding:clamp(28px,5vw,62px);align-self:center}.eyebrow{font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#b8d95b}.hero h1{font-size:clamp(42px,6vw,68px);line-height:.99;letter-spacing:-3px;margin:18px 0}.hero p{color:#c3c4c8;line-height:1.7;max-width:460px}.hero .pill{margin-top:12px}.hero-art{background:radial-gradient(circle at 50% 45%,#33383b 0,#17191c 50%,#101114 80%);display:grid;place-items:center;min-height:340px;padding:28px}.mock-table{width:min(360px,100%);height:330px;position:relative;display:grid;place-items:center}.stand{width:220px;height:270px;background:linear-gradient(145deg,#fefefe,#d7d9d5);border-radius:20px;box-shadow:0 30px 55px #0008;transform:rotate(-5deg);padding:24px 18px;color:#17181b;text-align:center;position:relative}.stand:after{content:"";position:absolute;left:20px;right:20px;bottom:-22px;height:35px;background:#aeb2ad;transform:skewY(-8deg);border-radius:0 0 12px 12px;z-index:-1}.tapmark{width:48px;height:48px;border:2px solid #202226;border-radius:50%;display:grid;place-items:center;margin:0 auto 18px;font-size:23px}.stand small{font-size:9px;letter-spacing:2px;font-weight:800}.stand h3{font-size:24px;letter-spacing:-1px;margin:10px 0}.stars{color:#8da92a;letter-spacing:4px;font-size:20px}.qr{margin:18px auto 0;width:66px;height:66px;border:6px solid white;outline:1px solid #222;background:repeating-conic-gradient(#111 0 25%,#fff 0 50%) 0/12px 12px}.section{padding:76px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:28px}.section h2{font-size:clamp(30px,4vw,42px);letter-spacing:-1.8px;margin:0}.section-head p{color:var(--muted);max-width:440px;line-height:1.6;margin:0}.products{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.product{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}.product-visual{height:230px;background:#e9eae5;display:grid;place-items:center;padding:20px}.mini-card{width:170px;height:200px;border-radius:14px;background:#fcfcfa;box-shadow:0 15px 30px #0002;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:15px;transform:rotate(-3deg)}.mini-card .tapmark{width:36px;height:36px;font-size:18px;margin-bottom:10px}.mini-card h3{font-size:18px;margin:4px}.mini-card p{font-size:10px;color:#686a70;margin:5px}.mini-card .qr{width:44px;height:44px;margin-top:9px;background-size:8px 8px}.product-body{padding:22px}.tag{display:inline-block;font-size:10px;text-transform:uppercase;letter-spacing:1px;font-weight:850;background:#f0f4dd;padding:7px 9px;border-radius:7px}.product h3{font-size:21px;letter-spacing:-.5px;margin:14px 0 7px}.product p{font-size:14px;color:var(--muted);line-height:1.55;min-height:44px}.price{font-size:25px;font-weight:900;margin:18px 0 14px}.price small{font-size:12px;color:var(--muted);font-weight:500}.product .pill{width:100%}.note{font-size:12px;color:var(--muted);margin-top:15px}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{padding:25px;border:1px solid var(--line);border-radius:18px;background:#fff}.num{font-size:12px;font-weight:900;color:#778c2b;letter-spacing:1px}.step h3{margin:14px 0 8px}.step p{color:var(--muted);font-size:14px;line-height:1.6;margin:0}.banner{background:var(--lime);padding:38px;border-radius:25px;display:flex;justify-content:space-between;align-items:center;gap:25px}.banner h2{font-size:clamp(28px,4vw,40px);letter-spacing:-1.5px;margin:0 0 8px}.banner p{margin:0;color:#3e4528}.banner .pill{background:#111;color:#fff;white-space:nowrap}.faq{max-width:780px;margin:auto}.faq details{padding:19px 0;border-bottom:1px solid var(--line)}.faq summary{font-weight:800;cursor:pointer}.faq p{color:var(--muted);line-height:1.7}.footer{background:var(--dark);color:#fff;padding:36px 0;margin-top:45px}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer p{color:#a8abb1;font-size:13px}.wa-float{position:fixed;right:18px;bottom:18px;z-index:10;box-shadow:0 8px 25px #0003}
-@media(max-width:760px){.navlinks a:not(.pill){display:none}.hero{grid-template-columns:1fr}.hero-art{min-height:310px}.section{padding:54px 0}.section-head{display:block}.section-head p{margin-top:12px}.products,.steps{grid-template-columns:1fr}.product-visual{height:210px}.banner,.footer-inner{align-items:flex-start;flex-direction:column}.banner .pill{white-space:normal}.hero h1{letter-spacing:-2px}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tarjetas NFC personalizadas para compartir tus datos con un solo toque. TAPLYNFC.">
+  <title>TAPLYNFC | Tu contacto. Un solo toque.</title>
+  <style>
+    :root{--bg:#070707;--panel:#111111;--panel2:#191713;--text:#f7f4ed;--muted:#b4afa5;--blue:#d5ad62;--blue2:#f2d89a;--line:#30291d;--white:#fff}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(7,7,7,.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(213,173,98,.2)}
+    .nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .logo{font-size:1.25rem;font-weight:850;letter-spacing:.08em}.logo span{color:var(--blue2)}
+    nav{display:flex;gap:22px;color:var(--muted);font-size:.92rem}
+    nav a:hover{color:var(--white)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,#f0d28f,#c79a4b);color:#100d07;border:1px solid #f4d99c;border-radius:12px;padding:13px 18px;font-weight:800;cursor:pointer;transition:transform .18s,filter .18s,box-shadow .18s;box-shadow:0 8px 28px rgba(213,173,98,.13)}
+    .btn:hover{filter:brightness(1.08);transform:translateY(-2px);box-shadow:0 12px 34px rgba(213,173,98,.22)}
+    .btn.secondary{background:rgba(255,255,255,.02);border:1px solid #57472b;color:var(--text);box-shadow:none}
+    .hero{padding:86px 0 70px;background:radial-gradient(ellipse at 78% 14%,rgba(213,173,98,.15),transparent 42%),radial-gradient(ellipse at 8% 80%,rgba(213,173,98,.045),transparent 38%)}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:48px}
+    .eyebrow{color:var(--blue2);font-size:.76rem;font-weight:850;letter-spacing:.19em;text-transform:uppercase}
+    h1{font-size:clamp(2.5rem,6vw,4.6rem);line-height:1.03;letter-spacing:-.055em;margin:16px 0 20px}
+    h1 em{font-style:normal;color:var(--blue2);text-shadow:0 0 34px rgba(213,173,98,.13)}
+    .lead{font-size:1.08rem;color:var(--muted);max-width:540px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .note{font-size:.82rem;color:var(--muted);margin-top:16px}
+    .visual{min-height:350px;position:relative;display:grid;place-items:center;border:1px solid rgba(213,173,98,.27);border-radius:28px;background:linear-gradient(145deg,#171510,#090909 68%);overflow:hidden;box-shadow:inset 0 1px 0 rgba(255,255,255,.04),0 28px 70px #0008}
+    .glow{position:absolute;width:240px;height:240px;border-radius:50%;background:#d5ad62;filter:blur(95px);opacity:.2}
+    .card-stack{position:relative;width:min(330px,80%);height:210px;transform:rotate(-7deg)}
+    .nfc-card{position:absolute;inset:0;border-radius:20px;border:1px solid #8e7445;background:linear-gradient(135deg,#292318,#080808 72%);box-shadow:0 30px 60px #000b;padding:24px;display:flex;flex-direction:column;justify-content:space-between}
+    .nfc-card.back{transform:translate(24px,20px) rotate(8deg);opacity:.48;background:linear-gradient(135deg,#80602b,#10100e);border-color:#b99a60}
+    .chip{width:38px;height:28px;border:1px solid #bba36e;border-radius:6px;background:linear-gradient(135deg,#bda56e,#574727)}
+    .card-name{font-size:1.35rem;font-weight:850;letter-spacing:.06em}.card-sub{font-size:.78rem;color:#d5c6a6;letter-spacing:.14em;text-transform:uppercase}
+    section{padding:66px 0}
+    .section-head{max-width:650px;margin-bottom:28px}
+    h2{font-size:clamp(1.8rem,4vw,2.65rem);line-height:1.1;letter-spacing:-.035em;margin:8px 0 12px}
+    .sub{color:var(--muted);margin:0}
+    .products{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .product{background:linear-gradient(160deg,#151515,#0c0c0c);border:1px solid #2b261d;border-radius:20px;overflow:hidden;transition:transform .22s,border-color .22s,box-shadow .22s}.product:hover{transform:translateY(-5px);border-color:rgba(213,173,98,.55);box-shadow:0 20px 45px #0008}
+    .product-art{height:190px;display:grid;place-items:center;background:radial-gradient(ellipse at 50% 25%,#302719,#15130f 68%)}
+    .product-art.white-art{background:radial-gradient(ellipse at 50% 25%,#e7e0d2,#bcb09a 68%)}
+    .product-art.blue-art{background:radial-gradient(ellipse at 50% 25%,#65502d,#13110d 68%)}
+    .mini-card{width:190px;height:118px;border-radius:13px;background:linear-gradient(140deg,#292318,#090909);border:1px solid #8e7445;box-shadow:0 18px 30px #0007;padding:14px;display:flex;flex-direction:column;justify-content:space-between;transform:rotate(-7deg)}
+    .mini-card.white{background:linear-gradient(140deg,#fff,#dce4ef);border-color:#c0c9d7;color:#101722}
+    .mini-card.blue{background:linear-gradient(140deg,#72582d,#100d08);border-color:#b99a60}
+    .mini-card b{font-size:.8rem;letter-spacing:.03em}.mini-card small{font-size:.55rem;letter-spacing:.12em;text-transform:uppercase;opacity:.75}
+    .product-info{padding:20px}.product-info h3{margin:0 0 6px;font-size:1.12rem}.product-info p{color:var(--muted);font-size:.92rem;min-height:46px;margin:0 0 16px}.price{font-weight:800;margin-bottom:16px}
+    .product .btn{width:100%}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .step{padding:22px;background:var(--panel);border:1px solid var(--line);border-radius:18px}
+    .num{width:34px;height:34px;display:grid;place-items:center;background:#302719;color:var(--blue2);border:1px solid #57472b;border-radius:10px;font-weight:850}
+    .step h3{margin:15px 0 7px}.step p{color:var(--muted);margin:0;font-size:.94rem}
+    .faq{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    details{padding:18px;background:var(--panel);border:1px solid var(--line);border-radius:14px}
+    summary{cursor:pointer;font-weight:750}details p{color:var(--muted);margin-bottom:0}
+    .cta{padding:34px;border-radius:24px;background:radial-gradient(ellipse at 0% 0%,rgba(213,173,98,.15),transparent 55%),linear-gradient(120deg,#17130d,#111 65%);border:1px solid rgba(213,173,98,.3);display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .cta p{color:var(--muted);margin-bottom:0}
+    footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+    .foot{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    @media(max-width:780px){.hero-grid{grid-template-columns:1fr;gap:30px}.hero{padding-top:54px}.visual{min-height:290px}.products{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr}.cta{align-items:flex-start;flex-direction:column}}
+    @media(max-width:520px){nav{gap:12px;font-size:.8rem}.nav>.btn{display:none}.products{grid-template-columns:1fr}.product-art{height:180px}.faq{grid-template-columns:1fr}.hero{padding-bottom:40px}section{padding:48px 0}}
+  </style>
 </head>
 <body>
-<div class="top">Diseñado para negocios que quieren conectar mejor · Envíos a Mendoza y toda Argentina</div>
-<header class="wrap nav"><a class="brand" href="#inicio">TAPLY<span>NFC</span></a><nav class="navlinks"><a href="#productos">Productos</a><a href="#como-funciona">Cómo funciona</a><a href="#preguntas">Preguntas</a><a class="pill" href="#productos">Ver productos ↗</a></nav></header>
-<main>
-<section class="wrap hero" id="inicio"><div class="hero-copy"><div class="eyebrow">Tecnología simple para comercios</div><h1>Tu negocio.<br>Un toque más<br>conectado.</h1><p>Soportes de mesa NFC personalizados con tu marca y QR. Tus clientes acercan el celular o escanean el código para abrir tus reseñas, redes o el enlace que elijas.</p><a class="pill" href="#productos">Elegir mi soporte <span>↗</span></a></div><div class="hero-art" aria-label="Ilustración de un soporte NFC de mesa"><div class="mock-table"><div class="stand"><div class="tapmark">⌁</div><small>ESCANEÁ O ACERCÁ</small><h3>¡Tu opinión<br>nos importa!</h3><div class="stars">★★★★★</div><div class="qr"></div><small style="display:block;margin-top:12px;letter-spacing:1px">TAPLYNFC</small></div></div></div></section>
-<section class="wrap section" id="productos"><div class="section-head"><div><div class="eyebrow" style="color:#71852c">La colección</div><h2>Elegí tu tarjeta NFC</h2></div><p>Elegí el modelo, contanos el nombre de tu negocio y qué enlace querés incluir. Coordinamos el diseño, el pago y el envío por WhatsApp.</p></div>
-<div class="products">
-<article class="product"><div class="product-visual"><div class="mini-card"><div class="tapmark">⌁</div><h3>Dejanos tu reseña</h3><p>Tu opinión nos ayuda a crecer</p><div class="stars">★★★★★</div><div class="qr"></div></div></div><div class="product-body"><span class="tag">Más elegido</span><h3>Soporte NFC de mesa</h3><p>Personalizado con tu marca, NFC y código QR.</p><div class="price">$35.000 <small>ARS · precio de referencia</small></div><button class="pill order" data-product="Soporte NFC de mesa" data-price="35000">Consultar por WhatsApp ↗</button></div></article>
-<article class="product"><div class="product-visual"><div class="mini-card" style="background:#22252a;color:#fff;transform:rotate(3deg)"><div class="tapmark" style="border-color:#fff">⌁</div><h3>Conectá con nosotros</h3><p style="color:#c6c8cc">Reseñas · Redes · Menú</p><div class="qr" style="outline-color:#fff;border-color:#fff"></div><small style="margin-top:12px;letter-spacing:1px">TAPLYNFC</small></div></div><div class="product-body"><span class="tag">Estilo oscuro</span><h3>Soporte NFC premium</h3><p>Diseño oscuro y elegante, personalizado para tu local.</p><div class="price">A cotizar <small>según modelo</small></div><button class="pill order" data-product="Soporte NFC premium" data-price="A cotizar">Consultar por WhatsApp ↗</button></div></article>
-<article class="product"><div class="product-visual"><div style="display:flex;gap:12px;align-items:center"><div class="mini-card" style="width:135px;height:170px;transform:rotate(-6deg)"><div class="tapmark" style="width:30px;height:30px;font-size:16px">⌁</div><h3 style="font-size:15px">Tu marca</h3><p>Escaneá acá</p><div class="qr" style="width:40px;height:40px"></div></div><div class="mini-card" style="width:110px;height:145px;transform:rotate(8deg);background:#d9ff55"><h3 style="font-size:16px">TAPLY</h3><div class="qr" style="width:38px;height:38px"></div></div></div></div><div class="product-body"><span class="tag">Para equipos</span><h3>Pedido por cantidad</h3><p>Consultá por varias unidades para sucursales o distintos espacios.</p><div class="price">Precio especial <small>por cantidad</small></div><button class="pill order" data-product="Pedido por cantidad" data-price="Consultar precio por cantidad">Pedir presupuesto ↗</button></div></article>
-</div><p class="note">Importante: los precios que aparecen son de ejemplo y tenés que confirmarlos antes de publicar. Las imágenes son ilustrativas; el producto final depende del modelo del proveedor.</p>
-</section>
-<section class="wrap section" id="como-funciona"><div class="section-head"><div><div class="eyebrow" style="color:#71852c">Simple y directo</div><h2>De la consulta al envío</h2></div><p>La compra se termina de coordinar personalmente para que puedas confirmar el diseño, el enlace y el costo de envío antes de cobrar.</p></div><div class="steps"><article class="step"><div class="num">PASO 01</div><h3>Elegís el modelo</h3><p>Hacé clic en consultar y se abre WhatsApp con el producto que te interesa.</p></article><article class="step"><div class="num">PASO 02</div><h3>Personalizamos</h3><p>Mandanos el nombre del local, logo si tenés y el enlace que debe abrir el NFC y el QR.</p></article><article class="step"><div class="num">PASO 03</div><h3>Pagás y recibís</h3><p>Confirmamos el total, el medio de pago, la dirección y el envío a Mendoza o a otra provincia.</p></article></div></section>
-<section class="wrap"><div class="banner"><div><h2>¿Listo para conectar tu negocio?</h2><p>Contanos qué necesitás y te ayudamos a elegir el modelo.</p></div><a class="pill wa-link" href="#">Hablar por WhatsApp ↗</a></div></section>
-<section class="wrap section faq" id="preguntas"><div class="eyebrow" style="color:#71852c">Antes de comprar</div><h2>Preguntas frecuentes</h2><details><summary>¿Cómo funciona la tarjeta NFC?</summary><p>Un celular compatible puede acercarse al soporte para abrir el enlace configurado. El QR ofrece una alternativa para quienes prefieren escanearlo con la cámara. La lectura NFC depende de la compatibilidad y configuración del teléfono.</p></details><details><summary>¿Puedo elegir el enlace?</summary><p>Sí. Al coordinar el pedido, indicá el enlace que querés abrir, por ejemplo tu perfil de reseñas, menú o redes sociales. Verificá el enlace antes de aprobar el diseño.</p></details><details><summary>¿Hacen envíos fuera de Mendoza?</summary><p>Sí, coordinamos envíos a Mendoza y al resto de Argentina. El costo, el transporte y el plazo se confirman por WhatsApp según tu localidad.</p></details><details><summary>¿Cómo se paga?</summary><p>La compra se coordina por WhatsApp. Antes de transferir o pagar, confirmá el precio final, el costo de envío, los datos del vendedor y las condiciones del pedido. No publiques datos bancarios privados en esta página.</p></details></section>
-</main>
-<footer class="footer"><div class="wrap footer-inner"><div><a class="brand" href="#inicio" style="color:#fff">TAPLY<span>NFC</span></a><p>Tu negocio, un toque más conectado.</p></div><p>© <span id="year"></span> TAPLYNFC · Envíos a todo el país</p></div></footer>
-<a class="pill wa-float wa-link" href="#" aria-label="Contactar por WhatsApp">WhatsApp ↗</a>
-<script>
-// CONFIGURACIÓN: reemplazá el número por tu WhatsApp en formato internacional, sin +, espacios ni guiones.
-// Ejemplo de formato argentino: 5492611234567. No uses el número de ejemplo como si fuera tuyo.
-const WHATSAPP_NUMBER = "5492610000000";
-const BRAND = "TAPLYNFC";
-function makeWaUrl(message){return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;}
-document.querySelectorAll('.order').forEach(btn=>btn.addEventListener('click',()=>{
- const msg=`Hola ${BRAND}, quiero consultar por: ${btn.dataset.product}. Precio publicado/de referencia: ${btn.dataset.price}.\n\nNombre del negocio:\nEnlace para NFC/QR:\nCantidad:\nCiudad y provincia para el envío:\nNombre de contacto:\n¿Necesito factura? (consultar)`;
- if(WHATSAPP_NUMBER==="5492610000000"){alert("Antes de usar la tienda, reemplazá WHATSAPP_NUMBER en el código por tu número real de WhatsApp (con código de país y área). Después probá el botón otra vez.");return;}
- window.open(makeWaUrl(msg),'_blank','noopener');
-}));
-document.querySelectorAll('.wa-link').forEach(a=>a.addEventListener('click',e=>{
- e.preventDefault();if(WHATSAPP_NUMBER==="5492610000000"){alert("Primero reemplazá WHATSAPP_NUMBER en el código por tu número real de WhatsApp.");return;}
- window.open(makeWaUrl(`Hola ${BRAND}, quiero consultar por los soportes NFC personalizados.`),'_blank','noopener');
-}));
-document.getElementById('year').textContent=new Date().getFullYear();
-</script>
-</body></html>
+  <header>
+    <div class="wrap nav">
+      <a class="logo" href="#inicio" aria-label="TAPLYNFC inicio">TAPLYN<span>NFC</span></a>
+      <nav aria-label="Navegación principal">
+        <a href="#productos">Productos</a><a href="#como-funciona">Cómo funciona</a><a href="#preguntas">Preguntas</a>
+      </nav>
+      <a class="btn" href="#productos">Ver tarjetas <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Conectá de forma inteligente</div>
+          <h1>Tu contacto.<br><em>Un solo toque.</em></h1>
+          <p class="lead">Tarjetas NFC personalizadas para compartir tu información de manera simple, moderna y profesional.</p>
+          <div class="actions">
+            <a class="btn" href="#productos">Elegir mi tarjeta <span aria-hidden="true">→</span></a>
+            <a class="btn secondary" href="#como-funciona">Cómo funciona</a>
+          </div>
+          <p class="note">Personalizá la tuya por $30.000 ARS. Envíos a Mendoza y todo Argentina.</p>
+        </div>
+        <div class="visual" aria-label="Ilustración decorativa de una tarjeta NFC">
+          <div class="glow"></div>
+          <div class="card-stack">
+            <div class="nfc-card back"><div class="chip"></div><div><div class="card-name">TAPLYN<span style="color:#78b6ff">NFC</span></div><div class="card-sub">Tap into connection</div></div></div>
+            <div class="nfc-card"><div class="chip"></div><div><div class="card-name">TAPLYN<span style="color:#78b6ff">NFC</span></div><div class="card-sub">Tu mundo, en un toque</div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="productos">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">El catálogo</div>
+          <h2>Elegí tu estilo.</h2>
+          <p class="sub">Tres ideas para empezar. Tarjetas NFC personalizadas por $30.000 ARS. Consultanos para coordinar tu diseño.</p>
+        </div>
+        <div class="products">
+          <article class="product">
+            <div class="product-art"><div class="mini-card"><div class="chip"></div><div><b>TAPLYN NFC</b><br><small>Black edition</small></div></div></div>
+            <div class="product-info"><h3>Black Edition</h3><p>Un acabado oscuro, sobrio y minimalista.</p><div class="price">$30.000 ARS</div><button class="btn order" data-product="Black Edition">Pedir por WhatsApp ↗</button></div>
+          </article>
+          <article class="product">
+            <div class="product-art white-art"><div class="mini-card white"><div class="chip"></div><div><b>TAPLYN NFC</b><br><small>White edition</small></div></div></div>
+            <div class="product-info"><h3>White Edition</h3><p>Un diseño claro y elegante para destacar.</p><div class="price">$30.000 ARS</div><button class="btn order" data-product="White Edition">Pedir por WhatsApp ↗</button></div>
+          </article>
+          <article class="product">
+            <div class="product-art blue-art"><div class="mini-card blue"><div class="chip"></div><div><b>TAPLYN NFC</b><br><small>Custom edition</small></div></div></div>
+            <div class="product-info"><h3>Custom Edition</h3><p>Consultá por opciones con tu nombre, logo o identidad visual.</p><div class="price">$30.000 ARS</div><button class="btn order" data-product="Custom Edition">Personalizar por WhatsApp ↗</button></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="como-funciona">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">Fácil y práctico</div><h2>¿Cómo funciona?</h2><p class="sub">La experiencia exacta depende de la configuración que se programe en cada tarjeta.</p></div>
+        <div class="steps">
+          <article class="step"><div class="num">01</div><h3>Elegí el diseño</h3><p>Seleccioná un estilo y contanos qué personalización necesitás.</p></article>
+          <article class="step"><div class="num">02</div><h3>Configuramos tu pedido</h3><p>Coordinamos la información que querés compartir y confirmamos los detalles.</p></article>
+          <article class="step"><div class="num">03</div><h3>Compartí con un toque</h3><p>Cuando recibas tu tarjeta configurada, podrás usarla según las funciones compatibles con tu modelo y dispositivo.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="preguntas">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">Antes de pedir</div><h2>Preguntas frecuentes</h2></div>
+        <div class="faq">
+          <details><summary>¿Puedo personalizar la tarjeta?</summary><p>Podés consultar por opciones de diseño, nombre o logo. La disponibilidad se confirma al hacer el pedido.</p></details>
+          <details><summary>¿Cómo compro?</summary><p>Elegí un producto y tocá el botón de WhatsApp. Coordinaremos el precio, el pago y los detalles antes de confirmar.</p></details>
+          <details><summary>¿Hacen envíos?</summary><p>Sí, hacemos envíos a Mendoza y a todo Argentina. El costo y el plazo se coordinan al realizar el pedido.</p></details>
+          <details><summary>¿Todos los celulares leen NFC?</summary><p>No todos los dispositivos tienen NFC o lo admiten de la misma forma. Consultá la compatibilidad de tu teléfono y de la tarjeta antes de comprar.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="cta"><div><div class="eyebrow">Tu próxima conexión empieza acá</div><h2>¿Creamos la tuya?</h2><p>Escribinos y coordinamos el diseño ideal para vos.</p></div><button class="btn order" data-product="Consulta general">Hablar por WhatsApp ↗</button></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap foot"><a class="logo" href="#inicio">TAPLYN<span>NFC</span></a><span>© <span id="year"></span> TAPLYNFC · Tarjetas NFC personalizadas</span><a href="#inicio">Volver arriba ↑</a></div></footer>
+  <script>
+    // IMPORTANTE: reemplazá el texto de abajo por tu número de WhatsApp con código de país y área,
+    // solo números, sin +, espacios ni guiones. Ejemplo de formato argentino: 5492611234567
+    const WHATSAPP_NUMBER = "549XXXXXXXXXX";
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.querySelectorAll(".order").forEach(button => {
+      button.addEventListener("click", () => {
+        const product = button.dataset.product || "Consulta general";
+        const message = `¡Hola! Vi la tienda TAPLYNFC y quiero pedir: ${product}. Vi el precio de $30.000 ARS. ¿Me cuentan cómo seguimos con la personalización y el envío?`;
+        if (!/^\d{10,15}$/.test(WHATSAPP_NUMBER)) {
+          alert("Antes de usar los pedidos, abrí el archivo index.html y reemplazá WHATSAPP_NUMBER por tu número real con código de país y área, solo números.");
+          return;
+        }
+        window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer");
+      });
+    });
+  </script>
+</body>
+</html>
